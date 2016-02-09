@@ -1,0 +1,13 @@
+import random
+verbList = [] 
+maxLengthVerbList = 2
+while len(verbList) < maxLengthVerbList:
+   item = input("Enter some verbs, if you can't think of any type \'random\' to randomly add random verbs:")
+   if item == 'random':
+     randomVerb = ['run', 'walk', 'swim', 'jump', 'fall']
+     verbList.append(random.choice(randomVerb))
+     print('Random verbs have been added!')
+   else:
+     verbList.append(item)
+print('Here\'s your list of verbs:')
+print(verbList)
